@@ -50,7 +50,7 @@ def train_rnn(X_train, X_test):
   print(f"X_test shape: {X_test.shape}")
 
   # train RNN
-  model.fit(X_train, X_train, epochs=100, batch_size=1, verbose=2)
+  model.fit(X_train, X_test, epochs=100, batch_size=1, verbose=2)
 
   return model
 
